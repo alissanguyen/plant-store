@@ -1,0 +1,31 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+
+.Header__Background {
+    width: 100%;
+    z-index: 1;
+}
+@media screen and (max-width: 768px) {
+    .Header__Background {
+        height: 2000px;
+        object-fit: cover;
+        z-index: 1;
+    }
+}
+
+.Header__Banner {
+    z-index: 1;
+}
+
+.Catalog__Button {
+    background-color: rgb(4, 88, 44);
+}
+
+.App {
+    background-image: url(./assets/header.svg);
+    background-size: cover;
+}
