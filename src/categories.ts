@@ -1,4 +1,6 @@
-export const plantTypes = [
+import { PlantCategory } from "./types";
+
+export const plantCategories: PlantCategory[] = [
   {
     id: "aglaonema",
     name: "Aglaonema"
@@ -34,5 +36,9 @@ export const plantTypes = [
   {
     id: "syngonium",
     name: "Syngonium"
+  },
+  {
+    id: "other",
+    name: "Other"
   }
 ];
