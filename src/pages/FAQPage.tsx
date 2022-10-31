@@ -15,7 +15,7 @@ const FAQPage: React.FC<Props> = ({ }) => {
             <Disclosure as="div" className="mt-2 border-b-2">
                 {({ open }) => (
                     <>
-                        <Disclosure.Button className="flex w-full justify-between rounded-lg py-2 text-left font-medium text-green-900" >
+                        <Disclosure.Button className="flex w-full justify-between rounded-lg py-2 text-left font-medium text-green-900">
                             <span>{question.question}</span>
                             <ChevronUpIcon
                                 className={`${open ? 'rotate-180 transform' : ''
