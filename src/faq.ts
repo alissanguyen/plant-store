@@ -23,7 +23,7 @@ export const faq: FaqInfo[] = [
     id: 3,
     question: "How do you ship my plants?",
     answer:
-      "Every plant will be shipped with shipping cushion, airbubbles, as well as polyfill to prevent damages to the plant. Depends on the conditions of the plant it will either be shipped in soil or moss. For California buyers, your plant(s) will be shipped in moss only since California has very strict regulations on plant shipments. For delicate plants, we will indicate in the description, and we strongly suggest you upgrade to Express Shipping to prevent shipping stresses."
+      "Every plant will be shipped with shipping cushion, airbubbles, as well as polyfill to prevent damages to the plant. Depends on the conditions of the plant it will either be shipped in soil or moss. Unfortunately, due to strict agricultural laws, we have to ship the plants bare root to the following states; Alaska, Alabama, Arkansas, Arizona, California, Colorado, Kansas, Idaho, Mississippi, Montana, Nebraska, North Dakota, New Mexico, Nevada, Oklahoma, Oregon, South Dakota, Texas, Utah, and Washington. For delicate plants, we will indicate in the description, and we strongly suggest you upgrade to Express Shipping to prevent shipping stresses."
   },
   {
     id: 4,
@@ -58,7 +58,7 @@ export const faq: FaqInfo[] = [
     id: 9,
     question: "Do you ship outside the United States?",
     answer:
-      "Unfortunately we don't offer international shipping as of right now. We only ship within the United States (except Alaska, Hawaii & Puerto Rico for strict regulations on plant shipments)."
+      "Unfortunately we don't offer international shipping as of right now. We only ship within the United States (except Puerto Rico for strict regulations on plant shipments)."
   },
   {
     id: 10,
