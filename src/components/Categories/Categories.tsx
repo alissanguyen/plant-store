@@ -8,7 +8,7 @@ interface Props {
 
 const Categories: React.FC<Props> = ({ }) => {
     return (
-        <div className="uppercase flex flex-col gap-3">
+        <div className="ShopPage__CategoryWrapper uppercase flex flex-col gap-3">
             <span className="text-3xl font-semibold">CATEGORIES</span>
             <ol className="flex flex-col text-xl font-light">
                 {plantCategories.map((category) => (
