@@ -4,17 +4,15 @@
 
 @import "tailwindcss/utilities";
 
-
+/* TODO: fix background image not full height */
+#root {
+    background-image: url(./assets/header.svg);
+    background-size: cover;
+    height: 100%;
+}
 .Header__Background {
     width: 100%;
     z-index: 1;
-}
-@media screen and (max-width: 768px) {
-    .Header__Background {
-        height: 2000px;
-        object-fit: cover;
-        z-index: 1;
-    }
 }
 
 .Header__Banner {
@@ -22,10 +20,118 @@
 }
 
 .Catalog__Button {
-    background-color: rgb(4, 88, 44);
+    background-color: rgb(34, 66, 41);
 }
 
-.App {
+/* .App {
     background-image: url(./assets/header.svg);
     background-size: cover;
+    height: 100vh !important;
+} */
+
+@media (min-width: 640px) {
+    .ProductsGrid {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 905px) {
+    .ProductsGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1280px) {
+    .ProductsGrid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1536px) {
+    .ProductsGrid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+    
+.ReviewCardPlant {
+    right: 0px;
+    bottom: 0px;
+    z-index: 1;
+    overflow: hidden;
+    opacity: 75%;
+}
+
+.Footer {
+    background-color: rgb(34, 66, 41);
+    color: rgb(252, 249, 243);
+}
+
+.Subscribe input {
+    background-color: rgb(252, 249, 243);
+}
+
+/* 50 fine bark 20 perlite rest coco peat*/
+
+a img {
+    color: white;
+}
+
+strong {
+    font-weight: 500;
+}
+
+.CardMedia.SoldOut {
+    filter: brightness(45%)
+}
+/* TOGGLE BUTTON */
+.toggle-wrapper {
+    flex: 1 1 calc(100% / 3);
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 40px;
+    height: 20px;
+    background: grey;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+}
+label:after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+input:checked + label {
+    background: #bada55;
+}
+input:checked + label:after {
+    left: calc(100% - 1px);
+    transform: translateX(-100%);
+}
+label:active:after {
+    width: 26px;
+}
+
+.Cart_QuantityChangeButton {
+    border: solid 1px gray;
+    padding: 2px;
 }
